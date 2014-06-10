@@ -10,7 +10,7 @@
                    "!")))
 
 (defmulti diet (fn [x] (:eater x)))
-(defmethod diet :herbivore [a] __)
+(defmethod diet :herbivore [a] (str (:name a) " eats veggies."))
 (defmethod diet :carnivore [a] __)
 (defmethod diet :default [a] __)
 
