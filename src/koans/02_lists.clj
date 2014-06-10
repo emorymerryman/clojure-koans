@@ -24,7 +24,7 @@
   (= (list :a :b :c :d :e) (cons :a '(:b :c :d :e)))
 
   "Conjoining an element to a list isn't hard either"
-  (= '(:a :b :c :d :e) (conj '(:a :b :c :d) :e))
+  (= (list :e :a :b :c :d) (conj '(:a :b :c :d) :e))
 
   "You can use a list like a stack to get the first element"
   (= __ (peek '(:a :b :c :d :e)))
