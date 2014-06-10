@@ -21,7 +21,7 @@
   (= true (== 2.0 2))
 
   "Something is not equal to nothing"
-  (= __ (not (= 1 nil)))
+  (= true (not (= 1 nil)))
 
   "Strings, and keywords, and symbols: oh my!"
   (= __ (= "foo" :foo 'foo))
