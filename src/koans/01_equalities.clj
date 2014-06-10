@@ -27,7 +27,7 @@
   (= false (= "foo" :foo 'foo))
 
   "Make a keyword with your keyboard"
-  (= :foo (keyword __))
+  (= :foo (keyword "foo"))
 
   "Symbolism is all around us"
   (= 'foo (symbol __))
