@@ -24,7 +24,7 @@
   (= [10 20 30] (map (fn [x] (* 10 x)) (filter (fn [x] (< x 4)) [1 2 3 4 5 6 7 8])))
 
   "Reducing can increase the result"
-  (= __ (reduce (fn [a b] (* a b)) [1 2 3 4]))
+  (= 24 (reduce (fn [a b] (* a b)) [1 2 3 4]))
 
   "You can start somewhere else"
   (= 2400 (reduce (fn [a b] (* a b)) __ [1 2 3 4]))
