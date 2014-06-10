@@ -33,7 +33,7 @@
            #(* %1 %2)))
 
   "Higher-order functions take function arguments"
-  (= 25 (___
+  (= 25 ( (fn[f](f 5))
           (fn [n] (* n n))))
 
   "But they are often better written using the names of functions"
