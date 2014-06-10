@@ -6,7 +6,7 @@
   (= true true)
 
   "To understand reality, we must compare our expectations against reality"
-  (= __ (+ 1 1))
+  (= 2 (+ 1 1))
 
   "You can test equality of many things"
   (= (+ 3 4) 7 (+ 2 __))
