@@ -15,7 +15,7 @@
   (= true (= 2 2/1))
 
   "You cannot generally float to heavens of integers"
-  (= __ (= 2 2.0))
+  (= false (= 2 2.0))
 
   "But a looser equality is also possible"
   (= __ (== 2.0 2))
