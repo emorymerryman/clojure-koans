@@ -9,7 +9,7 @@
   (= 2 (+ 1 1))
 
   "You can test equality of many things"
-  (= (+ 3 4) 7 (+ 2 __))
+  (= (+ 3 4) 7 (+ 2 5))
 
   "Some things may appear different, but be the same"
   (= __ (= 2 2/1))
