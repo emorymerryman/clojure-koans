@@ -18,7 +18,7 @@
   (= false (= 2 2.0))
 
   "But a looser equality is also possible"
-  (= __ (== 2.0 2))
+  (= true (== 2.0 2))
 
   "Something is not equal to nothing"
   (= __ (not (= 1 nil)))
