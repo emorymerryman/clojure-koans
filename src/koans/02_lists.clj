@@ -12,7 +12,7 @@
   (= (list 2 3 4 5) (rest '(1 2 3 4 5)))
 
   "Count your blessings"
-  (= __ (count '(dracula dooku chocula)))
+  (= 3 (count '(dracula dooku chocula)))
 
   "Before they are gone"
   (= __ (count '()))
