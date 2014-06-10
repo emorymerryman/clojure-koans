@@ -33,7 +33,7 @@
   (= '(:b :c :d :e) (pop '(:a :b :c :d :e)))
 
   "But watch out if you try to pop nothing"
-  (= __ (try
+  (= "No dice!" (try
           (pop '())
           (catch IllegalStateException e
             "No dice!")))
