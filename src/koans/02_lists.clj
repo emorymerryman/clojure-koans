@@ -15,16 +15,16 @@
   (= 3 (count '(dracula dooku chocula)))
 
   "Before they are gone"
-  (= __ (count '()))
+  (= 0 (count '()))
 
   "The rest, when nothing is left, is empty"
-  (= __ (rest '(100)))
+  (= (list) (rest '(100)))
 
   "Construction by adding an element to the front is easy"
-  (= __ (cons :a '(:b :c :d :e)))
+  (= (list :a :b :c :d :e) (cons :a '(:b :c :d :e)))
 
   "Conjoining an element to a list isn't hard either"
-  (= __ (conj '(:a :b :c :d) :e))
+  (= '(:a :b :c :d :e) (conj '(:a :b :c :d) :e))
 
   "You can use a list like a stack to get the first element"
   (= __ (peek '(:a :b :c :d :e)))
