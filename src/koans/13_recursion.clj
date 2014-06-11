@@ -22,10 +22,10 @@
 )
 
 (defn factorial [n]
-      (loop [n n fact()]
+      (loop [n n acc 1]
       	    (if (= 0 n)
-	    	fact
-		(recur (dec n) (* n fact))
+	    	acc
+		(recur (dec n) (* n acc))
 )))
 
 (meditations
