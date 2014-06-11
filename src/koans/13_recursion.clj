@@ -18,7 +18,7 @@
       	    reversed()]
 	    (if (= ( ) coll )
 	    	reversed
-		(recur (rest coll) (first coll))))
+		(recur (rest coll) (cons (first coll)))))
 )
 
 (defn factorial [n]
