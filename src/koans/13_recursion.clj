@@ -14,7 +14,7 @@
       (recur (dec n) (not acc)))))
 
 (defn recursive-reverse [coll]
-  __)
+  coll)
 
 (defn factorial [n]
   __)
