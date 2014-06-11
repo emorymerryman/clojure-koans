@@ -15,7 +15,7 @@
   (= (str "First comes love, "
           "then comes marriage, "
           "then comes Clojure with the baby carriage")
-     ((fn [[a b c]] __)
+     ((fn [[a b c]] (str "First comes " a ", then comes " b ", then comes " c " with the baby carriage" ))
       ["love" "marriage" "Clojure"]))
 
   "Or in let expressions"
