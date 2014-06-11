@@ -20,7 +20,7 @@
   "Don't forget: first things first"
   (= [:a :b :c :d]
        (let [ab-adder (partial concat [:a :b])]
-         (ab-adder [partial [:c :d]])))
+         (ab-adder [:c :d])))
 
   "Functions can join forces as one 'composed' function"
   (= 25 (let [inc-and-square (comp square inc)]
