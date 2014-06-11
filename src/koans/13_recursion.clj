@@ -22,7 +22,7 @@
 )
 
 (defn factorial [n]
-  __)
+  1)
 
 (meditations
   "Recursion ends with a base case"
