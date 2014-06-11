@@ -22,10 +22,11 @@
 )
 
 (defn factorial [n]
-  (if (= 0 n)
-      1
-      (* n (factorial (- n 1)))
-))
+      (loop [n n fact()]
+      	    (if (= 0 n)
+	    	fact
+		(recur (dec n) (* n fact))
+)))
 
 (meditations
   "Recursion ends with a base case"
