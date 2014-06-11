@@ -17,7 +17,7 @@
   "And also filtering"
   (= '(1 3 5 7 9)
      (filter odd? (range 10))
-     (for [x __ :when (odd? x)]
+     (for [x (range 10) :when (odd? x)]
        x))
 
   "Combinations of these transformations is trivial"
