@@ -14,7 +14,10 @@
       (recur (dec n) (not acc)))))
 
 (defn recursive-reverse [coll]
-  coll)
+  (if (= 1 (count coll))
+      coll
+      (concat (recursive-reverse (rest coll)) (list (first coll)))
+))
 
 (defn factorial [n]
   __)
