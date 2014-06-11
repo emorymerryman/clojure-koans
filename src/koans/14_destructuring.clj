@@ -23,7 +23,7 @@
      (let [[first-name last-name & aliases]
            (list "Rich" "Hickey" "The Clojurer" "Go Time" "Macro Killah")]
        str(first-name " " last-name
-       		      (map #(str " aka " %) aliases )
+       		      (apply str (map #(str " aka " %) aliases ))
        ) ))
 
   "You can regain the full argument if you like arguing"
